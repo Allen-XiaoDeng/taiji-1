@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>会动的八卦</title>
   </head>
   <body>
@@ -12,64 +15,66 @@
     <div id="div1Wrapper">
       <div id="div1"></div>
     </div>
-    
-      <style>* {
-          margin: 0;
-          padding: 0;
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      *::after {
+        box-sizing: border-box;
+      }
+
+      *::before {
+        box-sizing: border-box;
+      }
+
+      #demo {
+        word-break: break-all;
+      }
+
+      #div1 {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+      }
+
+      #div1::before {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+
+      #div1::after {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+
+      @media (max-width: 500px) {
+        #html {
+          height: 50vh;
+          overflow: auto;
         }
 
-        * {
-          box-sizing: border-box;
-        }
-
-        *::after {
-          box-sizing: border-box;
-        }
-
-        *::before {
-          box-sizing: border-box;
-        }
-
-        #demo {
-          word-break: break-all;
+        #div1Wrapper {
+          height: 50vh;
         }
 
         #div1 {
-          position: fixed;
-          left: 50%;
-          transform: translateX(-50%);
-          top: 20px;
+          position: relative;
+          right: 0;
+          top: 0;
         }
+      }
+    </style>
 
-        #div1::before {
-          content: '';
-          display: block;
-          position: absolute;
-        }
-
-        #div1::after {
-          content: '';
-          display: block;
-          position: absolute;
-        }
-
-        @media (max-width: 500px) {
-          #html {
-            height: 50vh;
-            overflow: auto;
-          }
-
-          #div1Wrapper {
-            height: 50vh;
-          }
-
-          #div1 {
-            position: relative;
-            right: 0;
-            top: 0;
-          }
-        }</style>
-    
-    <script src="/main.1f19ae8e.js"></script>
+    <script src="dist/main.1f19ae8e.js"></script>
   </body>
 </html>
