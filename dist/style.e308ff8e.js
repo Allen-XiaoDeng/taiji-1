@@ -476,4 +476,4 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   ],
   null
 );
-//# sourceMappingURL=/dist/style.e308ff8e.js.map
+//# sourceMappingURL=style.e308ff8e.js.map
